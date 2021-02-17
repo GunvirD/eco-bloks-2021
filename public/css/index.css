@@ -1,0 +1,40 @@
+/*
+blue-->#44bcd8
+black-->#1c100b
+green-->#80FF94
+ */
+
+body
+{
+  font-family: "Ubuntu", sans-serif;
+}
+
+ /* Top */
+.horizontal-align
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.welcome
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.horizontal-align > .text
+{
+  margin-right: 10%;
+}
+.title
+{
+  font-size: 12vh;
+  color:#80FF94;
+}
+.slogan
+{
+  font-size: 3.5vh;
+  color:#80FF94;
+  font-family: 'Dancing Script', cursive;
+}

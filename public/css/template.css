@@ -1,0 +1,87 @@
+/*
+blue-->#44bcd8
+black-->#1c100b
+green-->#80FF94
+ */
+ /* Preloader */
+
+ .loader-container
+ {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   /* text-transform: uppercase; */
+ }
+
+
+ .pre-loader
+ {
+   font-weight: bold;
+   position: relative;
+   font-size: 14vh;
+   color: #19171A;
+   -webkit-text-stroke: 0.25vw #383d52;
+   letter-spacing: 1rem;
+ }
+
+ .pre-loader::before
+ {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   color: #80FF94;
+   -webkit-text-stroke: 0vw #383d52;
+   border-right: 2px solid #80FF94;
+   overflow: hidden;
+   animation: title-animate 3s linear infinite;
+ }
+ @keyframes title-animate {
+   0%,10%,100%
+   {
+     width: 0;
+   }
+   70%, 90%
+   {
+     width: 100%;
+   }
+ }
+
+
+
+
+
+
+
+
+body
+{
+  background: #1c100b;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Navbar */
+.nav-container
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #1c100b;
+  opacity: 75%;
+}
+
+.nav-link
+{
+  font-size: 2.2vh;
+  color: #80FF94;
+}
+.nav-link:hover
+{
+  font-size: 2.2vh;
+  color: #44bcd8;
+}
